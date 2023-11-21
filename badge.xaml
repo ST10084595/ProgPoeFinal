@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProgPoe1.badge"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgPoe1"
+        mc:Ignorable="d"
+        
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        xmlns:gif ="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        Background="Transparent" AllowsTransparency="True"
+        Title="badge" Height="300" Width="300">
+    <Grid>
+        <Image Source="Images/st_small_845x845-pad_1000x1000_f8f8f8.u5-removebg-preview.png"> 
+            
+            
+            
+        </Image>
+    </Grid>
+</Window>

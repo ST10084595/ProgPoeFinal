@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01405BE4-3AC7-4958-BF33-56E58488976E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProgPoe1</RootNamespace>
+    <AssemblyName>ProgPoe1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>packages\WpfAnimatedGif.2.0.2\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="achievementPopUp.xaml.cs">
+      <DependentUpon>achievementPopUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Achievements.xaml.cs">
+      <DependentUpon>Achievements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="badge.xaml.cs">
+      <DependentUpon>badge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CallNumbers.cs" />
+    <Compile Include="CheckingAreas.xaml.cs">
+      <DependentUpon>CheckingAreas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LisstControls.cs" />
+    <Compile Include="part3CallNums.xaml.cs">
+      <DependentUpon>part3CallNums.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PokemonMasterWinner.xaml.cs">
+      <DependentUpon>PokemonMasterWinner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReplacingBooks.xaml.cs">
+      <DependentUpon>ReplacingBooks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="treeNode.cs" />
+    <Page Include="achievementPopUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Achievements.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="badge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CheckingAreas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="part3CallNums.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PokemonMasterWinner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReplacingBooks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\18z8e43dp0082gif.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\poke.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\2860d2d8c3a1e402e0fc8913cd92cd7a_w200.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\checkingBooks.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\badge 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\newAchievements.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\up-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\st_small_845x845-pad_1000x1000_f8f8f8.u5-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\43acd36fd3b0d585d9f88df1cc825ae4.gif" />
+    <Resource Include="images\animesher.com_kawaii-pika-pikachu-1283027.gif" />
+    <Resource Include="images\d84o6a9-28125268-b60b-4752-a665-acf6b32fbe37.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\sad-pikachu-icegif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\sad-pikachu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\tumblr_oysp32MI1o1v68t0mo2_500.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\tumblr_b0fb24a73a1c4a54086a843911ad3f26_c0547aee_640.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\pokemon-ash.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

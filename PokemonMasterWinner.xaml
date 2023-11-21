@@ -1,0 +1,18 @@
+﻿<Window x:Class="ProgPoe1.PokemonMasterWinner"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgPoe1"
+        mc:Ignorable="d"
+        Title="PokemonMasterWinner" Height="400" Width="480"
+        
+         xmlns:gif="http://wpfanimatedgif.codeplex.com" 
+            WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid>
+        <Image  x:Name="congratulations" gif:ImageBehavior.AnimatedSource="Images/tumblr_b0fb24a73a1c4a54086a843911ad3f26_c0547aee_640.gif" Margin="-7,26,-7,16" 
+               />
+    </Grid>
+</Window>
